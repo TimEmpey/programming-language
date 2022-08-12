@@ -5,7 +5,7 @@
   background-color:lightblue;
   padding: 40px;
   border: solid black;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .button{
   border-radius:10px;
@@ -14,7 +14,9 @@
 .surveyAnswer{
   background-color:lightblue;
   padding: 40px;
-  border: solid darkgrey;
+  border: solid black;
+  margin-bottom: 50px;
+  border-radius:10px;
 }
 .Lessons{
  margin-top: 310px;
@@ -24,8 +26,14 @@
   border-radius:10px;
 }
 h1{
-  allign: center;
+  text-align: center;
 }
 h3{
   font-size: 15px;
+}
+.headerBlurp{
+  text-align:center;
+}
+body{
+  background-color:rgb(255, 250, 240)
 }
