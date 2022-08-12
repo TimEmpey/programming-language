@@ -1,107 +1,120 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet" text="text.css">
     <script src="js/scripts.js"></script>
     <title>Programming Language Suggester</title>
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-6">
 <!--Opening header-->
-    <h1>What Program Best Suits You?</h1>
-    <p>Fill out this quick questionaire to be given what proggraming language best suits your interests, Ruby, Python, or Javascript!</p>
+          <div class="jumbotron">
+            <h1>What Program Best Suits You?</h1>
+            <p><em>Fill out this quick questionaire to be given what proggraming language best suits your interests, Ruby, Python, or Javascript!</em></p>
+          </div>
 <!--Radio Button to collect user input-->
-    <form id="userInput">
-      <h2>Questionaire</h2>
-      <p>What do you see yourself developing?</p>
-      <label>
-    <!--Question 1-->
-        <input id="webpages" type="radio" name="question1" value="Webpages">
-        Webpages
-      </label><br>
-      <label>
-        <input id="dataCompilers" type="radio" name="question1" value="Data Compilers">
-        Data compilers
-      </label><br>
-      <label>
-        <input id="games" type="radio" name="question1" value="Games">
-        Games
-      </label><br><br>
-    <!--Question 2-->
-      <p>Do you have any past knowledge of coding</p>
-      <label>
-        <input id="aGoodAmount" type="radio" name="question2" value="A good amount">
-        A good amount
-      </label><br>
-      <label>
-        <input id="aLittleBit" type="radio" name="question2" value="A little bit">
-        A little bit
-      </label><br>
-      <label>
-        <input id="noneAtAll" type="radio" name="question2" value="None at all">
-        None at all
-      </label><br><br>
-    <!--Question 3-->
-      <p>Are you looking for a challenge?</p>
-      <label>
-        <input id="yes" type="radio" name="question3" value="Yes">
-        Yes
-      </label><br>
-      <label>
-        <input id="no" type="radio" name="question3" value="No">
-        No
-      </label><br><br>
-    <!--Question 4-->
-      <p>How are you good with numbers</p>
-      <label>
-        <input id="good" type="radio" name="question4" value="Good">
-        Good
-      </label><br>
-      <label>
-        <input id="alright" type="radio" name="question4" value="Alright">
-        Alright
-      </label><br>
-      <label>
-        <input id="terrible" type="radio" name="question4" value="Terrible">
-        Terrible
-      </label><br><br>
-    <!--Question 5-->
-      <p>Why do you want to learn a language</p>
-      <label>
-        <input  id="iLoveComputers" type="radio" name="question5" value="I love computers">
-        I love computers
-      </label><br>
-      <label>
-        <input id="toMakeMoney" type="radio" name="question5" value="To make money">
-        To make money
-      </label><br>
-      <label>
-        <input id="tryingNewThings" type="radio" name="question5" value="Trying new things">
-        Trying new things
-      </label><br><br>
-    <!--Submit button-->
-      <button type="submit">Submit</button>
-    </form><br>
+          <form id="userInput">
+            <div class="survey">
+              <h2>Questionaire</h2>
+              <p>What do you see yourself developing?</p>
+              <label>
+                <input id="webpages" type="radio" name="question1" value="Webpages">
+              Webpages
+              </label><br>
+              <label>
+                <input id="dataCompilers" type="radio" name="question1" value="Data Compilers">
+              Data compilers
+              </label><br>
+              <label>
+              <input id="games" type="radio" name="question1" value="Games">
+              Games
+              </label><br><br>
+              <p>Do you have any past knowledge of coding</p>
+              <label>
+                <input id="aGoodAmount" type="radio" name="question2" value="A good amount">
+                A good amount
+              </label><br>
+              <label>
+                <input id="aLittleBit" type="radio" name="question2" value="A little bit">
+                A little bit
+              </label><br>
+              <label>
+                <input id="noneAtAll" type="radio" name="question2" value="None at all">
+                None at all
+              </label><br><br>
+              <p>Are you looking for a challenge?</p>
+              <label>
+                <input id="yes" type="radio" name="question3" value="Yes">
+                Yes
+              </label><br>
+              <label>
+                <input id="no" type="radio" name="question3" value="No">
+                No
+              </label><br><br>
+              <p>How are you good with numbers</p>
+              <label>
+                <input id="good" type="radio" name="question4" value="Good">
+                Good
+              </label><br>
+              <label>
+                <input id="alright" type="radio" name="question4" value="Alright">
+                Alright
+              </label><br>
+              <label>
+                <input id="terrible" type="radio" name="question4" value="Terrible">
+                Terrible
+              </label><br><br>
+              <p>Why do you want to learn a language</p>
+              <label>
+                <input  id="iLoveComputers" type="radio" name="question5" value="I love computers">
+                I love computers
+              </label><br>
+              <label>
+                <input id="toMakeMoney" type="radio" name="question5" value="To make money">
+                To make money
+              </label><br>
+              <label>
+                <input id="tryingNewThings" type="radio" name="question5" value="Trying new things">
+                Trying new things
+              </label><br><br>
+<!--Submit button-->
+              <button type="submit" class="button">Submit</button>
+            </div>
+          </form><br>
 <!--Footing to dispaly recommended language-->
-    <div id="javascript" class="hidden">
-      <h2>Results</h2>
-      <p id="output">You'd be best off learning JavaScript first!</p>
-      <img src="img/JavaScript-logo.jpg" alt="Image of JavaScript logo" width=300px>
-    </div>  
-    <div id="ruby" class="hidden">
-      <h2>Results</h2>
-      <p id="output">You'd be best off learning Ruby first!</p>
-      <img src="img/ruby-logo.jpg" alt="Image of JavaScript logo" width=300px>
-    </div>
-    <div id="python" class="hidden">
-      <h2>Results</h2>
-      <p id="output">You'd be best off learning Python first!</p>
-      <img src="img/python-logo.jpg" alt="Image of JavaScript logo" width=300px>
-    </div>
-    <div id="error" class="hidden">
-      <h2>Error</h2>
-      <p><em>Your choices didn't show any of these programs are for you.</em></p>
+          <div class="jumbotron">
+            <div class="surveyAnswer">
+              <div id="javascript" class="hidden">
+                <h2>Results</h2>
+                <p id="output">You'd be best off learning JavaScript first!</p>
+                <img src="img/JavaScript-logo.jpg" alt="Image of JavaScript logo" width=400px>
+              </div>  
+              <div id="ruby" class="hidden">
+                <h2>Results</h2>
+                <p id="output">You'd be best off learning Ruby first!</p>
+                <img src="img/ruby-logo.jpg" alt="Image of JavaScript logo" width=400px>
+              </div>
+              <div id="python" class="hidden">
+                <h2>Results</h2>
+                <p id="output">You'd be best off learning Python first!</p>
+                <img src="img/python-logo.jpg" alt="Image of JavaScript logo" width=400px>
+              </div>
+              <div id="error" class="hidden">
+                <h2>Error</h2>
+                <p><em>Your choices showed any of these programs are for you.</em></p>
+              </div>
+              <div class="col-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
