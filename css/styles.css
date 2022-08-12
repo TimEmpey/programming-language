@@ -4,7 +4,7 @@
 .survey{
   background-color:lightblue;
   padding: 40px;
-  border: solid darkgrey;
+  border: solid black;
   border-radius: 20px;
 }
 .button{
@@ -14,5 +14,18 @@
 .surveyAnswer{
   background-color:lightblue;
   padding: 40px;
+  border: solid darkgrey;
+}
+.Lessons{
+ margin-top: 310px;
+}
+.lessonImg{
   border: solid black;
+  border-radius:10px;
+}
+h1{
+  allign: center;
+}
+h3{
+  font-size: 15px;
 }
